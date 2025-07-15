@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Yosua & Mbak</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Sacramento&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="countdown/default.css">
+    <script src="countdown/simplyCountdown.umd.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="bootstrap-5/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    
+    <!-- <div id="countdown" class="simply-countdown"></div> -->
+
+    <section id="hero" class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white">
+        <main>
+            <h4>Hari Bahagia</h4>
+            <h1>Lauren & Yosua</h1>
+            <h5>Kepada Yth. <br> Keluarga, Bapak, Ibu, Saudara/i</h5>
+            <h3>Nama Undangan</h3>
+            <p>Kepada Keluarga, Bapak, Ibu, Saudara/i diharapkan dapat datang ke </p>
+            <a href="#home" class="btn btn-lg" onclick="enableScrool()">Lihat Undangan</a>
+            
+        </main>
+    </section>
+
+    <nav class="navbar navbar-expand-md sticky-top navbarcss">
+        <div class="container">
+            <a class="navbar-brand" href="#">Yosua & Mbak</a>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+             </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Yosua & Mbak</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="navbar-nav ms-auto">
+                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#Info">Info</a>
+                        <a class="nav-link" href="#Story">Story</a>
+                        <a class="nav-link" href="#Galery">Galery</a>
+                        <a class="nav-link" href="#gift">Gift</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="home">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-center teksacara">
+                    <h2>Acara Pernikahan</h2>
+                    <h4>Diselenggarangan pada tanggal 9 Agustus 2026,Di Salatiga, Jawa Tengah</h4>
+                    <p>Oleh Karena itu, Kami dengan segala hormat kami mengundang Bapak, Ibu,dan Saudara/i untuk menghadiri upacara pernikahan kami.</p>
+                </div>
+            </div>
+            <div class="row couple col-lg-13">
+                <div class="col-lg-6 d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-duration="1000"  data-aos-once="true">
+                    <div class="p-2 order-md-2 order-lg-1 ">
+                        <h3>Yosua</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eum placeat! Alias impedit nisi fugit tempore architecto praesentium sed minus molestias, placeat libero quod odit cumque explicabo nostrum corrupti neque?</p>
+                        <p>Putra Dari Bpk. Lorem <br>dan<br> Ibu Lorem</p>
+                    </div>
+                    <div class="p-2 text-md-end order-md-1 order-lg-2">
+                        <img src="img/photo_L.JPG" class="img-responsive rounded-circle" width="50" height="200">
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex flex-column flex-md-row" data-aos="fade-up" data-aos-duration="1000"  data-aos-once="true">
+                    <div class="p-2 order-md-1  ">
+                        <img src="img/photo_L.JPG" class="img-responsive rounded-circle" width="50" height="200">
+                    </div>
+                    <div class="p-2 text-md-end order-md-2 ">
+                        <h3>Yosua</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, eum placeat! Alias impedit nisi fugit tempore architecto praesentium sed minus molestias, placeat libero quod odit cumque explicabo nostrum corrupti neque?</p>
+                        <p>Putra Dari Bpk. Lorem <br>dan<br> Ibu Lorem</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="bootstrap-5/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.5/dist/index.bundle.min.js"></script>
+    <script>
+        simplyCountdown('.simply-countdown',{
+            year: 2025, // Target year (required)
+            month: 7, // Target month [1-12] (required)
+            day: 9, // Target day [1-31] (required)
+            hours: 8, // Target hour [0-23], default: 0
+            words: { // Custom labels, with lambda for plurals
+            days: { root: 'Hari', lambda: (root, n) => pluralizeRus(n, 'Hari', 'Hari', 'Hari') },
+            hours: { root: 'Jam', lambda: (root, n) => pluralizeRus(n, 'Jam', 'Jam', 'Jam') },
+            minutes: { root: 'Menit', lambda: (root, n) => pluralizeRus(n, 'Menit', 'Menit', 'Menit') },
+            seconds: { root: 'Detik', lambda: (root, n) => pluralizeRus(n, 'Detik', 'Detik', 'Detik') }
+        },
+        onEnd: () => {}, // Callback when countdown ends
+        onStop: () => {}, // Callback when countdown is stopped
+        onResume: () => {}, // Callback when countdown is resumed
+        onUpdate: (params) => {} 
+        })
+        function pluralizeRus(number, singular, genitiveSingular, genitivePlural) {
+            const lastDigit = number % 10;
+            const lastTwoDigits = number % 100;
+
+            if (lastTwoDigits >= 11 && lastTwoDigits <= 14) {
+                return `${genitivePlural}`; // Specific case for numbers 11-14
+            }
+
+            if (lastDigit === 1 && lastTwoDigits !== 11) {
+                return `${singular}`; // Specific case for number (1, 21, 31...)
+            }
+
+            if (lastDigit >= 2 && lastDigit <= 4 && !(lastTwoDigits >= 12 && lastTwoDigits <= 14)) {
+                return `${genitiveSingular}`; // Genetive singular (2, 3, 4...)
+            }
+
+            return `${genitivePlural}`;
+        }
+    </script>
+    <script>
+        const TombolNav = document.querySelector('.navbar-toggler');
+        const stickytop = document.querySelector('.sticky-top');
+        const offcanvas = document.querySelector('.offcanvas')
+        const navLinks = document.querySelectorAll('.offcanvas-body .nav-link');
+
+        TombolNav.addEventListener('click',function(){
+            stickytop.style.overflow = 'visible';
+        })
+        offcanvas.addEventListener('hidden.bs.offcanvas',function(){
+            stickytop.style.overflow = 'hidden';
+        })
+        navLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            const offcanvasInstance = bootstrap.Offcanvas.getInstance(offcanvas);
+            offcanvasInstance.hide(); // Menutup offcanvas saat tautan ditekan
+        });
+    });
+    </script>
+    <script>
+
+        const rootElement = document.querySelector(":root");
+        const bgm = document.querySelector('#bgm');
+        const icon = document.querySelector('.audio-icon');
+        const iconI = document.querySelector('.audio-icon i');
+        let startSong = false;
+
+        function disableScroll(){
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+            window.onscroll = function (){
+                window.scrollTo(scrollTop,scrollLeft);
+            }
+            rootElement.style.scrollBehavior = "auto";
+            bgm.pause();
+
+        }
+        function playAudio(){
+            bgm.volume = 0.7
+            icon.style.display = 'flex'
+            bgm.play();
+            startSong = true;
+        }
+
+        icon.onclick = function (){
+            if(startSong){
+                bgm.pause()
+                iconI.classList.remove('bi-pause');
+                iconI.classList.add('bi-play');
+            }else{
+                bgm.play()
+                iconI.classList.remove('bi-play');
+                iconI.classList.add('bi-pause');
+            }
+            startSong = !startSong
+        }
+
+        function enableScrool() {
+            window.onscroll = function (){};
+            rootElement.style.scrollBehavior = "smooth";
+            playAudio();
+        }
+
+
+        disableScroll();
+    </script>
+    <script>
+        function btnBri(){
+            var bri = document.getElementById('bri')
+            bri.select();
+            bri.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(bri.value)
+            alert("Berhasi di Copy");
+        }
+        function btnBni(){
+            var bni = document.getElementById('bni')
+            bni.select();
+            bni.setSelectionRange(0, 99999);
+            navigator.clipboard.writeText(bni.value)
+            alert("Berhasi di Copy");
+        }    
+    </script>
+  </body>
+</html>
