@@ -84,6 +84,7 @@ body{
     font-weight: bold;
 }
 
+
 .home h4, .home p{
     font-family: "Work Sans", serif;
     color: #444;
@@ -96,6 +97,10 @@ body{
 .home p{
     font-family: "Work Sans", serif;
     font-size: 1rem;
+}
+
+.home .couple{
+    margin-bottom: 15vh;
 }
 
 .home .couple h3{
@@ -111,7 +116,59 @@ body{
 .home .couple img{
     width: 100%;
 }
+.home .couple button{
+    border: 1px solid var(--pink);
+    background-color: white;
+    color: var(--pink);
+    border-radius: 10px;
+    padding: 0.5rem;
+}
+.home .couple button:hover{
+    background-color: var(--pink);
+    color: white;
+}
 
+.info{
+    background-color: var(--pink);
+    color: white;
+    padding-top: 10rem;
+    padding-bottom: 8rem;
+}
+.info h3{
+    color: white;
+    font-family: "Sacramento", serif;
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.info .alamat{
+    font-family: "Work Sans", serif;
+    font-size: 1rem;
+}
+
+.info .deskripsi{
+    font-family: "Work Sans", serif;
+    font-weight: 300;
+    margin-bottom: 7rem;
+}
+
+.info iframe{
+    width: 100%;
+    height: 50%;
+}
+
+.info .card{
+    margin-top: 2rem;
+    background-color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.425);
+    color: black;
+}
+.info .card-header{
+    border-bottom: 1px solid rgb(126, 126, 126);
+}
+.info .card-footer{
+    border-top: 1px solid rgb(126, 126, 126);
+}
 
 @keyframes rotating {
     from{
@@ -203,6 +260,9 @@ body{
         font-family: "Sacramento", serif;
         color: var(--pink);
         font-size: 5rem;
+    }
+    .home .couple h3,.home .couple p{
+        text-align: center;
     }
     .home .couple p{
         font-family: "Work Sans", serif;
