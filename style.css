@@ -170,6 +170,124 @@ body{
     border-top: 1px solid rgb(126, 126, 126);
 }
 
+.story, .gallery{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.story span, .story span{
+    font-family: "Work Sans", serif;
+    font-size: 2rem;
+    color: #444;
+}
+
+.story h2{
+    font-family: "Sacramento", serif;
+    font-size: 5rem;
+    color: var(--pink);
+    text-align:center;
+    font-weight: bold;
+}
+.story p, .gallery p{
+    font-family: "Work Sans", serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.timeline{
+    list-style: none;
+    padding: 1.4rem 0;
+    margin-top: 1rem;
+    position: relative;
+}
+
+.timeline::before{
+    content: "";
+    top: 0;
+    bottom: 0;
+    position: absolute;
+    width: 1px;
+    background-color: #ccc;
+    left: 50%;
+}
+.timeline li{
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.timeline li::before,
+.timeline li::after{
+    content: '';
+    display: table;
+}
+
+.timeline li::after{
+    clear: both;
+}
+
+.timeline li .timeline-image{
+    width: 160px;
+    height: 160px;
+    position: absolute;
+    left: 50%;
+    border-radius: 50%;
+    background-color: #444;
+    transform: translate(-50%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.timeline li .timeline-panel{
+    width: 40%;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    position: relative;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.timeline li .timeline-panel::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #ccc;
+    border-right: 0 solid #ccc;
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    right: -15px;
+}
+
+.timeline li .timeline-panel::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    border-top: 14px solid transparent;
+    border-left: 14px solid #fff;
+    border-right: 0 solid #fff;
+    border-bottom: 14px solid transparent;
+    top: 81px;
+    right: -13px;
+}
+
+.timeline li.timeline-inverted .timeline-panel{
+    float: right;
+}
+.timeline li.timeline-inverted .timeline-panel::before{
+    border-left-width:0 ;
+    border-right-width: 15px;
+    left: -15px;
+    right: auto;
+}
+.timeline li.timeline-inverted .timeline-panel::after{
+    border-left-width:0 ;
+    border-right-width: 14px;
+    left: -13px;
+    right: auto;
+}
+
 @keyframes rotating {
     from{
         transform: rotate(0);
@@ -272,5 +390,55 @@ body{
     .home .couple img{
         margin-top: 2rem;
         width: 100%;
+    }
+    .timeline li .timeline-image{
+        width: 80px;
+        height: 80px;
+    }
+    .timeline li .timeline-panel{
+        width: 65%;
+        transform: translateX(-20px);
+    }
+    .timeline li .timeline-panel::before{
+        top: 30px;
+    }
+    .timeline li .timeline-panel::after{
+        top: 31px;
+    }
+    .home .teksacara{
+    height: 100vh;
+    }
+    .home .couple .laki{
+        padding-top: -50vh;
+        height: 100vh;
+        background-image: url('img/bg_home.jpg');
+    }
+    .home .couple .perempuan{
+        height: 100vh;
+    }
+
+    .home p{
+        font-family: "Work Sans", serif;
+        font-size: 1rem;
+    }
+
+    .home .couple h3{
+        font-family: "Sacramento", serif;
+        color: var(--pink);
+        font-size: 5rem;
+    }
+    .home .couple p{
+        font-family: "Work Sans", serif;
+        font-size: 1.5rem;
+    }
+
+    .home .couple img{
+        margin-top: 2rem;
+        width: 100%;
+    }
+
+    .timelapse{
+        height: 50vh;
+        margin-bottom: 25vh;
     }
 }
