@@ -134,22 +134,30 @@ body{
     padding-top: 6rem;
     padding-bottom: 10rem;
 }
-.info .container{
-    margin-bottom: 10rem;
-}
-.info img{
-    width: 100%;
-    height: 100%;
-}
-.info .pemberkatan{
-    width: 50%;
-    height: 100%;
-}
+
+
 .info h3{
     color: white;
     font-family: "Sacramento", serif;
     font-size: 5rem;
     font-weight: bold;
+}
+.info h4{
+    font-family: "Sacramento";
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.info p{
+    font-family: "Work Sans", serif;
+    font-size: 1rem;
+    font-weight: 300;   
+}
+.info .pemberkatan{
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    color: black;
 }
 
 .info .alamat{
@@ -159,14 +167,10 @@ body{
 .info .deskripsi{
     font-family: "Work Sans", serif;
 }
-
-.info iframe{
-    width: 100%;
-    height: 50%;
+.info .time{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
 }
-
-
-
 .story, .gallery{
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -388,7 +392,23 @@ body{
         margin-top: 2rem;
         width: 100%;
     }
-    .info img{
-        display: none;
+    .timeline li .timeline-image{
+        width: 80px;
+        height: 80px;
+    }
+    .timeline li .timeline-panel{
+        width: 65%;
+        transform: translateX(-20px);
+    }
+    .timeline li .timeline-panel::before{
+        top: 30px;
+    }
+    .timeline li .timeline-panel::after{
+        top: 31px;
+    }
+
+    .timelapse{
+        height: 50vh;
+        margin-bottom: 25vh;
     }
 }
