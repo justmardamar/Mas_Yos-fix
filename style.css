@@ -131,8 +131,19 @@ body{
 .info{
     background-color: var(--pink);
     color: white;
-    padding-top: 10rem;
-    padding-bottom: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 10rem;
+}
+.info .container{
+    margin-bottom: 10rem;
+}
+.info img{
+    width: 100%;
+    height: 100%;
+}
+.info .pemberkatan{
+    width: 50%;
+    height: 100%;
 }
 .info h3{
     color: white;
@@ -143,13 +154,10 @@ body{
 
 .info .alamat{
     font-family: "Work Sans", serif;
-    font-size: 1rem;
 }
 
 .info .deskripsi{
     font-family: "Work Sans", serif;
-    font-weight: 300;
-    margin-bottom: 7rem;
 }
 
 .info iframe{
@@ -157,18 +165,7 @@ body{
     height: 50%;
 }
 
-.info .card{
-    margin-top: 2rem;
-    background-color: #ffffff;
-    border: 1px solid rgba(255, 255, 255, 0.425);
-    color: black;
-}
-.info .card-header{
-    border-bottom: 1px solid rgb(126, 126, 126);
-}
-.info .card-footer{
-    border-top: 1px solid rgb(126, 126, 126);
-}
+
 
 .story, .gallery{
     padding-top: 5rem;
@@ -391,54 +388,7 @@ body{
         margin-top: 2rem;
         width: 100%;
     }
-    .timeline li .timeline-image{
-        width: 80px;
-        height: 80px;
-    }
-    .timeline li .timeline-panel{
-        width: 65%;
-        transform: translateX(-20px);
-    }
-    .timeline li .timeline-panel::before{
-        top: 30px;
-    }
-    .timeline li .timeline-panel::after{
-        top: 31px;
-    }
-    .home .teksacara{
-    height: 100vh;
-    }
-    .home .couple .laki{
-        padding-top: -50vh;
-        height: 100vh;
-        background-image: url('img/bg_home.jpg');
-    }
-    .home .couple .perempuan{
-        height: 100vh;
-    }
-
-    .home p{
-        font-family: "Work Sans", serif;
-        font-size: 1rem;
-    }
-
-    .home .couple h3{
-        font-family: "Sacramento", serif;
-        color: var(--pink);
-        font-size: 5rem;
-    }
-    .home .couple p{
-        font-family: "Work Sans", serif;
-        font-size: 1.5rem;
-    }
-
-    .home .couple img{
-        margin-top: 2rem;
-        width: 100%;
-    }
-
-    .timelapse{
-        height: 50vh;
-        margin-bottom: 25vh;
+    .info img{
+        display: none;
     }
 }
