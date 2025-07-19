@@ -147,25 +147,23 @@ body{
     font-size: 3rem;
     margin-bottom: 1rem;
     margin-top: 1rem;
+    color: #444;
 }
-.info p{
+.info p, .info span, .info i{
     font-family: "Work Sans", serif;
     font-size: 1rem;
-    font-weight: 300;   
+    font-weight: 300;
+    color: #444;   
 }
 .info .pemberkatan{
     height: fit-content;
     background-color: white;
     border-radius: 10px;
-    color: black;
-}
-
-.info .alamat{
-    font-family: "Work Sans", serif;
 }
 
 .info .deskripsi{
     font-family: "Work Sans", serif;
+    color: white;
 }
 .info .time{
     margin-top: 2rem;
@@ -343,6 +341,10 @@ body{
     .sticky-top{
         overflow: hidden;
     }
+    .info iframe{
+        width: 70%;
+        height: 20%;
+    }
     .navbarcss .nav-link{
         font-size: 2rem;
         text-align: center;
@@ -396,6 +398,17 @@ body{
         width: 80px;
         height: 80px;
     }
+
+    .info{
+        padding-top: 2rem;
+    }
+    
+
+    .info iframe{
+        width: 70%;
+        height: 20%;
+    }
+
     .timeline li .timeline-panel{
         width: 65%;
         transform: translateX(-20px);
