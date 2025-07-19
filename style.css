@@ -169,12 +169,23 @@ body{
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
+.info a
+{
+    width: 10rem;
+    color: white;
+    font-family: "Work Sans", serif;
+    padding: 0.7rem;
+    background-color: #ff71b1;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
 .story, .gallery{
     padding-top: 5rem;
     padding-bottom: 5rem;
 }
 
-.story span, .story span{
+.story span{
     font-family: "Work Sans", serif;
     font-size: 2rem;
     color: #444;
@@ -285,6 +296,48 @@ body{
     border-right-width: 14px;
     left: -13px;
     right: auto;
+}
+
+.gallery h2{
+    font-family: "Sacramento", serif;
+    font-size: 6rem;
+    color: white;
+    font-weight: bold;
+}
+
+.gallery p , .gallery span{
+    color: white;
+    font-family: "Work Sans", serif;
+}
+
+.gallery span{
+    font-family: "Work Sans", serif;
+    font-size: 2rem;
+}
+
+.gallery{
+    background-color: var(--pink);
+}
+
+.gift{
+    min-height: 100vh;
+    background-image: url('img/bg_home.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-top: 15rem;
+    padding-bottom: 5rem;
+}
+.gift h2{
+    font-family: "Sacramento", serif;
+    font-size: 6rem;
+    color: var(--pink);
+    font-weight: bold;
+}
+.gift p{
+    font-family: "Work Sans", serif;
+    color: #444;
+    font-size: 1rem;
+    font-weight: 300;
 }
 
 @keyframes rotating {
@@ -402,7 +455,6 @@ body{
     .info{
         padding-top: 2rem;
     }
-    
 
     .info iframe{
         width: 70%;
