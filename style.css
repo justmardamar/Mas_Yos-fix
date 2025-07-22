@@ -180,6 +180,12 @@ body{
     text-decoration: none;
 }
 
+.info a:hover{
+    color: var(--pink);
+    background-color: white;
+    border: 1px solid var(--pink);
+}
+
 .story, .gallery{
     padding-top: 5rem;
     padding-bottom: 5rem;
@@ -319,32 +325,18 @@ body{
     background-color: var(--pink);
 }
 
-.comment{
-    background-color: #0a0a0a;
-    color: white;
-    height: 100vh;
-}
-
-.comment input{
-    width: 80%;
-    padding: 0.4rem;
-    border-radius: 10px;
-}
-
-.comment h2{
-    padding-top: 4rem;
-    font-family: "Sacramento", serif;
-    font-size: 6rem;
+.gift .buka{
+    border: 1px solid var(--pink);
     color: var(--pink);
-    font-weight: bold;
+    background-color: white;
+    font-family: "Work Sans", serif;
+    padding: 0.5rem;
+    border-radius: 5px;
 }
 
-.comment button{
-    width: 10%;
+.gift .buka:hover{
     background-color: var(--pink);
     color: white;
-    border-radius: 10px;
-    padding: 0.4rem;
 }
 
 .gift{
@@ -367,6 +359,7 @@ body{
     font-size: 1rem;
     font-weight: 300;
 }
+
 
 footer{
     background-color: var(--pink);
@@ -407,14 +400,6 @@ footer a{
     line-height: 0;
 }
 
-@keyframes rotating {
-    from{
-        transform: rotate(0);
-    }
-    to{
-        transform: rotate(360deg);
-    }
-}
 
 @keyframes rotating {
     from{
@@ -521,7 +506,8 @@ footer a{
 
     .home .couple img{
         margin-top: 2rem;
-        width: 100%;
+        width: 120px;
+        height: 200px;
     }
     .timeline li .timeline-image{
         width: 80px;
@@ -535,6 +521,10 @@ footer a{
     .info iframe{
         width: 70%;
         height: 20%;
+    }
+
+    .gallery{
+        height: 100vh;
     }
 
     .timeline li .timeline-panel{
@@ -552,4 +542,5 @@ footer a{
         height: 50vh;
         margin-bottom: 25vh;
     }
+
 }
