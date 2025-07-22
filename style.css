@@ -368,6 +368,54 @@ body{
     font-weight: 300;
 }
 
+footer{
+    background-color: var(--pink);
+    padding-top: 3rem;
+    color: white;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+footer li{
+    margin:0.5rem;
+}
+footer a{
+    color: var(--bg);
+}
+
+.audio-icon{
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    width: 4rem;
+    height: 4rem;
+    font-size: 2.5rem;
+    position: fixed;
+    bottom: 2.5rem;
+    right: 2rem;
+    cursor: pointer;
+    color: white;
+    opacity: 0.5;
+    mix-blend-mode: difference;
+    animation: rotating 4s linear infinite;
+    transform-origin: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 0;
+}
+
+@keyframes rotating {
+    from{
+        transform: rotate(0);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
 @keyframes rotating {
     from{
         transform: rotate(0);
