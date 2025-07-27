@@ -34,6 +34,11 @@ body{
     text-shadow: var(--shadow);
     margin: 1.2rem;
 }
+
+.hero h3{
+    font-size: 2rem;
+}
+
 .hero p{
     font-size:1.4rem;
 }
@@ -116,14 +121,14 @@ body{
 .home .couple img{
     width: 100%;
 }
-.home .couple button{
+.home .couple a{
     border: 1px solid var(--pink);
     background-color: white;
     color: var(--pink);
     border-radius: 10px;
     padding: 0.5rem;
 }
-.home .couple button:hover{
+.home .couple a:hover{
     background-color: var(--pink);
     color: white;
 }
@@ -332,6 +337,7 @@ body{
     font-family: "Work Sans", serif;
     padding: 0.5rem;
     border-radius: 5px;
+    margin-bottom: 1.3rem;
 }
 
 .gift .buka:hover{
@@ -358,6 +364,21 @@ body{
     color: #444;
     font-size: 1rem;
     font-weight: 300;
+}
+
+.gift h4{
+    font-family: "Sacramento", serif;
+    font-size: 4rem;
+    color: var(--pink);
+    font-weight: bold;
+}
+
+.gift .trim{
+    font-family: "Work Sans", serif;
+    color: #444;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 4rem; 
 }
 
 
@@ -484,6 +505,13 @@ footer a{
     .navbarcss .nav-link{
         font-size: 1.5rem;
         text-align: center;
+    }
+
+
+
+    .hero h1{
+        font-family: "Sacramento", serif;
+        font-size : 8rem;
     }
 
     .home p{
