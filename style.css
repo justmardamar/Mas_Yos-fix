@@ -82,17 +82,16 @@ body{
     padding-bottom: 5rem;
 }
 
-.home h2{
-    font-family: "Sacramento", serif;
-    font-size: 6rem;
-    color: var(--pink);
-    font-weight: bold;
-}
-
-
-.home h4, .home p{
+.home p{
     font-family: "Work Sans", serif;
     color: #444;
+}
+
+.home .teksacara p{
+    font-family: "Sacramento", serif;
+    color: #444;
+    font-size: 2rem;
+    padding: 2.4rem;
 }
 
 .home .couple{
@@ -109,7 +108,7 @@ body{
 }
 
 .home .couple h3{
-    font-family: "Sacramento", serif;
+    font-family: "Dancing Script", serif;
     color: var(--pink);
     font-size: 2.4rem;
 }
@@ -437,33 +436,7 @@ footer a{
         font-size: 75%;
     }
 
-    .timeline::before{
-        left: 60px;
-    }
 
-    .timeline li .timeline-image{
-        left: 15px;
-        margin-left: 45px;
-        top: 16px;
-    }
-
-    .timeline li .timeline-panel{
-        width: calc((100% - 200px));
-        float: right;
-    }
-
-    .timeline li .timeline-panel::before{
-        border-left-width: 0;
-        border-right-width:15px ;
-        left: -15px;
-        right: auto;
-    }
-    .timeline li .timeline-panel::after{
-        border-left-width: 0;
-        border-right-width:14px ;
-        left: -13px;
-        right: auto;
-    }
 }
 /* Tablet */
 @media (max-width:768px) {
@@ -485,11 +458,6 @@ footer a{
         text-align: center;
     }
 
-    .timeline li .timeline-image{
-        width: 140px;
-        height: 140px;
-    }
-
 }
 /* Mobile Phone */
 @media (max-width:576px) {
@@ -506,7 +474,6 @@ footer a{
         font-size: 1.5rem;
         text-align: center;
     }
-
 
 
     .hero h1{
@@ -537,10 +504,6 @@ footer a{
         width: 120px;
         height: 200px;
     }
-    .timeline li .timeline-image{
-        width: 80px;
-        height: 80px;
-    }
 
     .info{
         padding-top: 2rem;
@@ -553,17 +516,6 @@ footer a{
 
     .gallery{
         height: 100vh;
-    }
-
-    .timeline li .timeline-panel{
-        width: 65%;
-        transform: translateX(-20px);
-    }
-    .timeline li .timeline-panel::before{
-        top: 30px;
-    }
-    .timeline li .timeline-panel::after{
-        top: 31px;
     }
 
     .timelapse{
