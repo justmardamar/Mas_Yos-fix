@@ -126,6 +126,7 @@ body{
     color: var(--pink);
     border-radius: 10px;
     padding: 0.5rem;
+    text-decoration: none;
 }
 .home .couple a:hover{
     background-color: var(--pink);
@@ -207,6 +208,7 @@ body{
     color: var(--pink);
     text-align:center;
     font-weight: bold;
+
 }
 .story p, .gallery p{
     font-family: "Work Sans", serif;
@@ -216,97 +218,86 @@ body{
 
 .timeline{
     list-style: none;
-    padding: 1.4rem 0;
+    padding: 0; 
     margin-top: 1rem;
     position: relative;
 }
 
-.timeline::before{
-    content: "";
-    top: 0;
-    bottom: 0;
-    position: absolute;
-    width: 1px;
-    background-color: #ccc;
-    left: 50%;
-}
 .timeline li{
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem; /* Jarak antar item timeline */
     position: relative;
+    width: 80%; /* Lebar konten */
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    z-index: 1; 
 }
 
-.timeline li::before,
-.timeline li::after{
-    content: '';
-    display: table;
-}
-
-.timeline li::after{
-    clear: both;
-}
-
-.timeline li .timeline-image{
-    width: 160px;
-    height: 160px;
+.timeline li::before {
+    content: "";
     position: absolute;
     left: 50%;
-    border-radius: 50%;
-    background-color: #444;
-    transform: translate(-50%);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    transform: translateX(-50%);
+    width: 1px;
+    background-color: #ccc; 
+    top: -1.5rem; 
+    height: calc(50% + 1.5rem); 
+    z-index: 0; 
 }
 
-.timeline li .timeline-panel{
-    width: 40%;
-    float: left;
-    border: 1px solid #ccc;
-    padding: 2rem;
-    position: relative;
-    border-radius: 8px;
-    background-color: #fff;
-}
-
-.timeline li .timeline-panel::before{
-    content: '';
-    display: inline-block;
+/* Garis bawah untuk setiap item li */
+.timeline li::after {
+    content: "";
     position: absolute;
-    border-top: 15px solid transparent;
-    border-left: 15px solid #ccc;
-    border-right: 0 solid #ccc;
-    border-bottom: 15px solid transparent;
-    top: 80px;
-    right: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 1px;
+    background-color: #ccc; 
+    bottom: -1.5rem; 
+    height: calc(50% + 1.5rem); 
+    z-index: -1; 
 }
 
-.timeline li .timeline-panel::after{
-    content: '';
-    display: inline-block;
-    position: absolute;
-    border-top: 14px solid transparent;
-    border-left: 14px solid #fff;
-    border-right: 0 solid #fff;
-    border-bottom: 14px solid transparent;
-    top: 81px;
-    right: -13px;
+.timeline li:first-child::before {
+    display: none;
 }
 
-.timeline li.timeline-inverted .timeline-panel{
-    float: right;
+.timeline li:last-child::after {
+    display: none;
 }
-.timeline li.timeline-inverted .timeline-panel::before{
-    border-left-width:0 ;
-    border-right-width: 15px;
-    left: -15px;
-    right: auto;
+
+
+.timeline li .col-10 {
+    width: 100%;
+    padding: 1rem; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+    background-color: white; 
+    border: 1px solid #eee; 
+    position: relative; 
+    z-index: 0; 
+    border-radius: 10px;
+    
 }
-.timeline li.timeline-inverted .timeline-panel::after{
-    border-left-width:0 ;
-    border-right-width: 14px;
-    left: -13px;
-    right: auto;
+
+.timeline li p{
+    padding: 1rem;
 }
+
+
+.timeline li img{
+    width: 90%;
+    height: 300px;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto 1rem auto; 
+    border-radius: 10px;
+}
+
 
 .gallery h2{
     font-family: "Sacramento", serif;
@@ -418,6 +409,7 @@ footer a{
     justify-content: center;
     align-items: center;
     line-height: 0;
+    z-index: 3;
 }
 
 
@@ -474,8 +466,6 @@ footer a{
         font-size: 1.5rem;
         text-align: center;
     }
-
-
     .hero h1{
         font-family: "Sacramento", serif;
         font-size : 8rem;
