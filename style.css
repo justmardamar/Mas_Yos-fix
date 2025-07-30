@@ -1,5 +1,5 @@
 :root{
-    --pink : #f14e96;
+    --pink : #a26121;
     --bg : #0a0a0a;
     --shadow : 0 2px 2px rgb(0 0 0/0.5);
 }
@@ -63,7 +63,7 @@ body{
 }
 
 .navbarcss .navbar-brand, .navbarcss .offcanvas-title{
-    font-family: "Sacramento", serif;
+    font-family: "Sacramento";
     font-size: 2.2rem;
 }
 
@@ -74,7 +74,7 @@ body{
 
 .home{
     min-height: 100vh;
-    background-image: url('img/bg_home.jpg');
+    background-image: url('img/bg_jawa.jpg');
     background-size: cover;
     background-position: center;
     margin-top: -6rem;
@@ -143,9 +143,8 @@ body{
 
 .info h3{
     color: white;
-    font-family: "Sacramento", serif;
+    font-family: "javasoul";
     font-size: 5rem;
-    font-weight: bold;
 }
 .info h4{
     font-family: "Sacramento";
@@ -203,11 +202,10 @@ body{
 }
 
 .story h2{
-    font-family: "Sacramento", serif;
+    font-family: "javasoul";
     font-size: 5rem;
     color: var(--pink);
     text-align:center;
-    font-weight: bold;
 
 }
 .story p, .gallery p{
@@ -300,10 +298,9 @@ body{
 
 
 .gallery h2{
-    font-family: "Sacramento", serif;
+    font-family: "javasoul";
     font-size: 6rem;
     color: white;
-    font-weight: bold;
 }
 
 .gallery p , .gallery span{
@@ -371,7 +368,6 @@ body{
     margin-top: 4rem; 
 }
 
-
 footer{
     background-color: var(--pink);
     padding-top: 3rem;
@@ -383,6 +379,7 @@ footer ul{
     display: flex;
     justify-content: center;
 }
+
 footer li{
     margin:0.5rem;
 }
@@ -427,8 +424,6 @@ footer a{
     html{
         font-size: 75%;
     }
-
-
 }
 /* Tablet */
 @media (max-width:768px) {
@@ -514,3 +509,13 @@ footer a{
     }
 
 }
+
+@font-face {
+    font-family: 'Upakarti';
+    src: url('font/upakarti.ttf'), url('font/Upakarti\ Serong.ttf');
+}
+@font-face {
+    font-family: 'javasoul';
+    src: url('font/Javassoul.woff'),url('font/Javassoul.woff2');
+}
+
