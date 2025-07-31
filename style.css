@@ -1,5 +1,5 @@
 :root{
-    --pink : #a26121;
+    --pink : #854836;
     --bg : #0a0a0a;
     --shadow : 0 2px 2px rgb(0 0 0/0.5);
 }
@@ -74,7 +74,7 @@ body{
 
 .home{
     min-height: 100vh;
-    background-image: url('img/bg_jawa.jpg');
+    background-image: url('img/black.jpg');
     background-size: cover;
     background-position: center;
     margin-top: -6rem;
@@ -84,12 +84,12 @@ body{
 
 .home p{
     font-family: "Work Sans", serif;
-    color: #444;
+    color: #F7F7F7;
 }
 
 .home .teksacara p{
     font-family: "Sacramento", serif;
-    color: #444;
+    color: #F7F7F7;
     font-size: 2rem;
     padding: 2.4rem;
 }
@@ -107,9 +107,9 @@ body{
     margin-bottom: 15vh;
 }
 
-.home .couple h3{
+.home h3{
     font-family: "Dancing Script", serif;
-    color: var(--pink);
+    color: #FFB22C;
     font-size: 2.4rem;
 }
 .home .couple p{
@@ -179,7 +179,7 @@ body{
     color: white;
     font-family: "Work Sans", serif;
     padding: 0.7rem;
-    background-color: #ff71b1;
+    background-color: var(--pink);
     border-radius: 7px;
     text-decoration: none;
 }
@@ -334,7 +334,7 @@ body{
 
 .gift{
     min-height: 100vh;
-    background-image: url('img/bg_home.jpg');
+    background-image: url('img/black.jpg');
     background-size: cover;
     background-position: center;
     padding-top: 15rem;
@@ -343,12 +343,12 @@ body{
 .gift h2{
     font-family: "Sacramento", serif;
     font-size: 6rem;
-    color: var(--pink);
+    color: #f5df63;
     font-weight: bold;
 }
 .gift p{
     font-family: "Work Sans", serif;
-    color: #444;
+    color: white;
     font-size: 1rem;
     font-weight: 300;
 }
@@ -356,7 +356,7 @@ body{
 .gift h4{
     font-family: "Sacramento", serif;
     font-size: 4rem;
-    color: var(--pink);
+    color: #FFB22C;
     font-weight: bold;
 }
 
@@ -466,14 +466,16 @@ footer a{
         font-size : 8rem;
     }
 
+    .home{
+        background-size: auto;
+    }
+
     .home p{
         font-family: "Work Sans", serif;
         font-size: 1rem;
     }
 
     .home .couple h3{
-        font-family: "Sacramento", serif;
-        color: var(--pink);
         font-size: 5rem;
     }
     .home .couple h3,.home .couple p{
@@ -519,3 +521,4 @@ footer a{
     src: url('font/Javassoul.woff'),url('font/Javassoul.woff2');
 }
 
+/* righen font */
