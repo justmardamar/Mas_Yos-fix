@@ -76,7 +76,6 @@ body{
     min-height: 100vh;
     background-image: url('img/damar_jawa.jpg');
     background-size: cover;
-    background-position: center;
     margin-top: -6rem;
     padding-top: 15rem;
     padding-bottom: 5rem;
@@ -108,7 +107,7 @@ body{
 }
 
 .home h3{
-    font-family: "Dancing Script", serif;
+    font-family: "Javasoul", serif;
     color: #FFB22C;
     font-size: 2.4rem;
 }
@@ -122,15 +121,14 @@ body{
 }
 .home .couple a{
     border: 1px solid var(--pink);
-    background-color: white;
-    color: var(--pink);
+    background-color: var(--pink);
+    color: #FFB22C;
     border-radius: 10px;
     padding: 0.5rem;
     text-decoration: none;
 }
 .home .couple a:hover{
-    background-color: var(--pink);
-    color: white;
+    background-color: white;
 }
 
 .info{
@@ -206,8 +204,14 @@ body{
     font-size: 5rem;
     color: var(--pink);
     text-align:center;
-
 }
+
+.story h3{
+    font-family: 'Sacramento';
+    font-size: 3rem;
+    padding: 1rem;
+}
+
 .story p, .gallery p{
     font-family: "Work Sans", serif;
     font-size: 1rem;
@@ -362,7 +366,7 @@ body{
 
 .gift .trim{
     font-family: "Work Sans", serif;
-    color: #444;
+    color: #F7F7F7;
     font-size: 1rem;
     font-weight: 300;
     margin-top: 4rem; 
@@ -384,11 +388,11 @@ footer li{
     margin:0.5rem;
 }
 footer a{
-    color: var(--bg);
+    color: #F7F7F7;
 }
 
 .audio-icon{
-    border: 1px solid #ffffff;
+    border: 2px solid #F7F7F7;
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
@@ -397,7 +401,7 @@ footer a{
     bottom: 2.5rem;
     right: 2rem;
     cursor: pointer;
-    color: white;
+    color: #F7F7F7;
     opacity: 0.5;
     mix-blend-mode: difference;
     animation: rotating 4s linear infinite;
@@ -444,7 +448,6 @@ footer a{
         font-size: 2rem;
         text-align: center;
     }
-
 }
 /* Mobile Phone */
 @media (max-width:576px) {
@@ -464,10 +467,6 @@ footer a{
     .hero h1{
         font-family: "Sacramento", serif;
         font-size : 8rem;
-    }
-
-    .home{
-        background-size: auto;
     }
 
     .home p{
