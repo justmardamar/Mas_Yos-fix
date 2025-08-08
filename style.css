@@ -19,15 +19,14 @@ body{
     background-size: cover;
     background-position: center;
     z-index: -1;
-    filter: grayscale();
 }
 .hero{
     position: relative;
-    min-height: 110vh;
+    min-height: 130vh;
 }
 .hero h1{
     font-family: "Sacramento", serif;
-    font-size : 6rem;
+    font-size : 5rem;
 }
 
 .hero h1,.hero h4,.hero h3,.hero h5,.hero p{
@@ -72,13 +71,29 @@ body{
     text-transform: uppercase;
 }
 
-.home{
+.ayat{
     min-height: 100vh;
-    background-image: url('img/damar_jawa.jpg');
-    background-size: cover;
+    background-color: #854836;
+    color: #FFB22C;
     margin-top: -6rem;
     padding-top: 15rem;
     padding-bottom: 5rem;
+}
+.ayat h3{
+    font-size: 5rem;
+    font-family: 'javasoul'
+}
+
+.ayat p{
+    font-size: 2rem;
+    padding: 3rem;
+}
+
+.home{
+    min-height: 110vh;
+    background-image: url('img/damar_jawa.jpg');
+    background-size: cover;
+    padding-top: 10rem;
 }
 
 .home p{
@@ -87,9 +102,9 @@ body{
 }
 
 .home .teksacara p{
-    font-family: "Sacramento", serif;
+    font-family: "Work Sans", serif;
     color: #F7F7F7;
-    font-size: 2rem;
+    font-size: 1.4rem;
     padding: 2.4rem;
 }
 
@@ -201,7 +216,7 @@ body{
 
 .story h2{
     font-family: "javasoul";
-    font-size: 5rem;
+    font-size: 6rem;
     color: var(--pink);
     text-align:center;
 }
@@ -341,7 +356,7 @@ body{
     background-image: url('img/damar_jawa.jpg');
     background-size: cover;
     background-position: center;
-    padding-top: 15rem;
+    padding-top: 10rem;
     padding-bottom: 5rem;
 }
 .gift h2{
@@ -352,7 +367,7 @@ body{
 }
 .gift p{
     font-family: "Work Sans", serif;
-    color: white;
+    color: #444;
     font-size: 1rem;
     font-weight: 300;
 }
@@ -469,6 +484,9 @@ footer a{
         font-size : 8rem;
     }
 
+    .home{
+        min-height: 180vh;
+    }
     .home p{
         font-family: "Work Sans", serif;
         font-size: 1rem;
