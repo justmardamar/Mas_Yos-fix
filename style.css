@@ -138,12 +138,13 @@ body{
     border: 1px solid var(--pink);
     background-color: var(--pink);
     color: #FFB22C;
-    border-radius: 10px;
+    border-radius: 7px;
     padding: 0.5rem;
     text-decoration: none;
 }
 .home .couple a:hover{
     background-color: white;
+    color: var(--pink);
 }
 
 .info{
@@ -168,7 +169,7 @@ body{
 }
 .info p, .info span, .info i{
     font-family: "Work Sans", serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
     font-weight: 300;
     color: #444;   
 }
@@ -338,8 +339,8 @@ body{
 
 .gift .buka{
     border: 1px solid var(--pink);
-    color: var(--pink);
-    background-color: white;
+    color: #FFB22C;
+    background-color: var(--pink);
     font-family: "Work Sans", serif;
     padding: 0.5rem;
     border-radius: 5px;
@@ -347,8 +348,16 @@ body{
 }
 
 .gift .buka:hover{
-    background-color: var(--pink);
-    color: white;
+    background-color: white;
+    color: var(--pink);
+}
+
+.gift .kata{
+    font-family: "Work Sans", serif;
+    color: #F7F7F7;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-top: 2rem; 
 }
 
 .gift{
@@ -360,10 +369,9 @@ body{
     padding-bottom: 5rem;
 }
 .gift h2{
-    font-family: "Sacramento", serif;
+    font-family: "javasoul";
     font-size: 6rem;
-    color: #f5df63;
-    font-weight: bold;
+    color: #FFB22C;
 }
 .gift p{
     font-family: "Work Sans", serif;
@@ -379,13 +387,6 @@ body{
     font-weight: bold;
 }
 
-.gift .trim{
-    font-family: "Work Sans", serif;
-    color: #F7F7F7;
-    font-size: 1rem;
-    font-weight: 300;
-    margin-top: 4rem; 
-}
 
 footer{
     background-color: var(--pink);
@@ -463,11 +464,35 @@ footer a{
         font-size: 2rem;
         text-align: center;
     }
+    .hero h1{
+        font-family: "Sacramento", serif;
+        font-size : 9rem;
+    }
+    .home{
+        min-height: 130vh;
+    }
+    .home .couple img{
+        margin-top: 2rem;
+        width: 150px;
+        height: 200px;
+    }
+    .home .couple h3{
+        font-size: 3rem;
+    }
+
+    .gift .kata{
+        margin: 2rem 1rem;
+        font-size: 1.5rem;
+        font-family: "Work Sans", serif;
+    }
 }
 /* Mobile Phone */
 @media (max-width:576px) {
     html{
         font-size: 62.5%;
+    }
+    .hero{
+        height: 110vh;
     }
     .hero h1{
         font-size: 5rem;
@@ -486,6 +511,9 @@ footer a{
 
     .home{
         min-height: 180vh;
+        background-size: cover;
+        background-position: center;
+
     }
     .home p{
         font-family: "Work Sans", serif;
@@ -525,6 +553,10 @@ footer a{
     .timelapse{
         height: 50vh;
         margin-bottom: 25vh;
+    }
+
+    .gift .kata{
+        font-size: 1.3rem;
     }
 
 }
