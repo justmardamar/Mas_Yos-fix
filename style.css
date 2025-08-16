@@ -488,11 +488,12 @@ footer a{
 }
 /* Mobile Phone */
 @media (max-width:576px) {
+
     html{
         font-size: 62.5%;
     }
     .hero{
-        height: 110vh;
+        height: 100vh;
     }
     .hero h1{
         font-size: 5rem;
@@ -510,8 +511,7 @@ footer a{
     }
 
     .home{
-        min-height: 180vh;
-        background-size: cover;
+        min-height: 170vh;
         background-position: center;
 
     }
@@ -529,6 +529,10 @@ footer a{
     .home .couple p{
         font-family: "Work Sans", serif;
         font-size: 1.5rem;
+    }
+
+    .home .teksacara img{
+        width: 25px;
     }
 
     .home .couple img{
