@@ -243,6 +243,18 @@ body{
     font-weight: 300;
 }
 
+.ayatBawah{
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    width: fit-content;
+    margin: 3rem auto;
+    padding: 3rem;
+}
+
+.ayatBawah h5{
+    font-family: 'Sacramento';
+}
+
 .timeline{
     list-style: none;
     padding: 0; 
