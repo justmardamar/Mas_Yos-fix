@@ -8,6 +8,13 @@ body{
     font-family: "Work Sans", serif;
 }
 
+.con{
+    background-image: url('img/damar_jawa.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .hero::before{
     content: '';
     position: absolute;
@@ -74,7 +81,7 @@ body{
 
 .ayat{
     min-height: 100vh;
-    background-color: #854836;
+    /* background-color: #854836; */
     color: #FFB22C;
     margin-top: -6rem;
     padding-top: 15rem;
@@ -92,7 +99,7 @@ body{
 
 .home{
     min-height: 110vh;
-    background-image: url('img/damar_jawa.jpg');
+    /* background-image: url('img/damarjawa.png'); */
     background-size: cover;
     padding-top: 10rem;
 }
@@ -131,9 +138,10 @@ body{
     font-family: "Work Sans", serif;
     font-size: 1rem;
 }
-
 .home .couple img{
-    width: 100%;
+    width: 160px;
+    height: 200px;
+    display: hidden;
 }
 .home .couple a{
     border: 1px solid var(--pink);
@@ -473,8 +481,7 @@ footer a{
         min-height: 130vh;
     }
     .home .couple img{
-        margin-top: 2rem;
-        width: 150px;
+        width: 160px;
         height: 200px;
     }
     .home .couple h3{
@@ -514,7 +521,7 @@ footer a{
     .home{
         min-height: 170vh;
         background-position: center;
-
+        background-position: -30vh;
     }
     .home p{
         font-family: "Work Sans", serif;
@@ -537,8 +544,7 @@ footer a{
     }
 
     .home .couple img{
-        margin-top: 2rem;
-        width: 120px;
+        width: 160px;
         height: 200px;
     }
 
