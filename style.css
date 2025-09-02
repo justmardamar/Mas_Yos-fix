@@ -9,7 +9,7 @@ body{
 }
 
 .con{
-    background-image: url('img/damar_jawa.jpg');
+    background-image: url('img/cobaResizepart_2.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,6 +65,11 @@ body{
     backdrop-filter: blur(4px);
 }
 
+.imgKipas{
+    width: 20vh;
+    height: 35vh;
+}
+
 .navbarcss .offcanvas{
     height: 100vh;
 }
@@ -81,7 +86,10 @@ body{
 
 .ayat{
     min-height: 100vh;
-    /* background-color: #854836; */
+    background-image: url('img/cobaResizepart_2.jpg');
+    background-position: center;
+    background-repeat: none;
+    background-size: cover;
     color: #FFB22C;
     margin-top: -6rem;
     padding-top: 15rem;
@@ -98,9 +106,11 @@ body{
 }
 
 .home{
-    min-height: 110vh;
-    /* background-image: url('img/damarjawa.png'); */
+    min-height: 140vh;
+    background-image: url('img/cobaResizepart_2.jpg');
+    background-position: center;
     background-size: cover;
+    background-repeat: none;
     padding-top: 10rem;
 }
 
@@ -113,7 +123,7 @@ body{
     font-family: "Work Sans", serif;
     color: #F7F7F7;
     font-size: 1.4rem;
-    padding: 2.4rem;
+    padding: 1.4rem;
 }
 
 .home .couple{
@@ -139,8 +149,8 @@ body{
     font-size: 1rem;
 }
 .home .couple img{
-    width: 160px;
-    height: 200px;
+    width: 220px;
+    height: 300px;
     display: hidden;
 }
 .home .couple a{
@@ -244,7 +254,6 @@ body{
 }
 
 .ayatBawah{
-    border: 2px solid #ccc;
     border-radius: 12px;
     width: fit-content;
     margin: 3rem auto;
@@ -253,6 +262,7 @@ body{
 
 .ayatBawah h5{
     font-family: 'Sacramento';
+    font-size: 3.2vh;
 }
 
 .timeline{
@@ -530,10 +540,12 @@ footer a{
         font-size : 8rem;
     }
 
+    .imgKipas{
+        width: 20vh;
+    }
+
     .home{
-        min-height: 170vh;
-        background-position: center;
-        background-position: -30vh;
+        min-height: 200vh;
     }
     .home p{
         font-family: "Work Sans", serif;
@@ -549,10 +561,6 @@ footer a{
     .home .couple p{
         font-family: "Work Sans", serif;
         font-size: 1.5rem;
-    }
-
-    .home .teksacara img{
-        width: 25px;
     }
 
     .home .couple img{
